@@ -1,0 +1,255 @@
+{
+  "info": {
+    "_postman_id": "eb2ff724-46dc-4a7b-9b6d-fea3c65cadcc",
+    "name": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55977773",
+    "_collection_link": "https://go.postman.co/collection/55977773-eb2ff724-46dc-4a7b-9b6d-fea3c65cadcc?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get cars by status",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/cars/available",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "cars",
+            "available"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "Create car",
+      "protocolProfileBehavior": {
+        "protocolVersion": "auto"
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "default"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"UF_MODEL\": \"Toyota Camry\",\r\n    \"UF_YEAR\": 2022,\r\n    \"UF_VIN\": \"100101\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 3500\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/cars/create",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "cars",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create multiple cars",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n  {\r\n    \"UF_MODEL\": \"Toyota Camry x2\",\r\n    \"UF_YEAR\": 2021,\r\n    \"UF_VIN\": \"10003\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 3500\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"BMW X5 complete\",\r\n    \"UF_YEAR\": 2021,\r\n    \"UF_VIN\": \"10005\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 7000\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Hyundai Solaris\",\r\n    \"UF_YEAR\": 2022,\r\n    \"UF_VIN\": \"10006\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 2200\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Kia Rio\",\r\n    \"UF_YEAR\": 2023,\r\n    \"UF_VIN\": \"10007\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 2300\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Volkswagen Polo\",\r\n    \"UF_YEAR\": 2021,\r\n    \"UF_VIN\": \"10008\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 2500\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Skoda Octavia\",\r\n    \"UF_YEAR\": 2022,\r\n    \"UF_VIN\": \"10009\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 3200\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Toyota Corolla\",\r\n    \"UF_YEAR\": 2023,\r\n    \"UF_VIN\": \"10010\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 3000\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Mazda 6\",\r\n    \"UF_YEAR\": 2021,\r\n    \"UF_VIN\": \"10011\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 3800\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Honda Accord\",\r\n    \"UF_YEAR\": 2022,\r\n    \"UF_VIN\": \"10012\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 4200\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Nissan X-Trail\",\r\n    \"UF_YEAR\": 2023,\r\n    \"UF_VIN\": \"10013\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 5000\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Toyota RAV4\",\r\n    \"UF_YEAR\": 2022,\r\n    \"UF_VIN\": \"10014\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 5500\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Hyundai Tucson\",\r\n    \"UF_YEAR\": 2023,\r\n    \"UF_VIN\": \"10015\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 5200\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Kia Sportage\",\r\n    \"UF_YEAR\": 2022,\r\n    \"UF_VIN\": \"10016\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 5100\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"BMW 5 Series\",\r\n    \"UF_YEAR\": 2021,\r\n    \"UF_VIN\": \"10017\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 7500\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Mercedes-Benz E-Class\",\r\n    \"UF_YEAR\": 2022,\r\n    \"UF_VIN\": \"10018\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 8500\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Audi A6\",\r\n    \"UF_YEAR\": 2023,\r\n    \"UF_VIN\": \"10019\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 8200\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Lexus RX 350\",\r\n    \"UF_YEAR\": 2022,\r\n    \"UF_VIN\": \"10020\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 9000\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Mercedes-Benz GLE 300\",\r\n    \"UF_YEAR\": 2023,\r\n    \"UF_VIN\": \"10021\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 12000\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"BMW X7\",\r\n    \"UF_YEAR\": 2023,\r\n    \"UF_VIN\": \"10022\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 14000\r\n  },\r\n  {\r\n    \"UF_MODEL\": \"Range Rover Sport\",\r\n    \"UF_YEAR\": 2022,\r\n    \"UF_VIN\": \"10023\",\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 16000\r\n  }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/cars/multiple/create",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "cars",
+            "multiple",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update car",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"UF_STATUS\": 1,\r\n    \"UF_PRICE_PER_DAY\": 2500    \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/cars/108/update",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "cars",
+            "108",
+            "update"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete car",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "default"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "url": {
+          "raw": "{{url}}/cars/104/delete",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "cars",
+            "104",
+            "delete"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Test drive car",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"UF_CAR\": 5,\r\n    \"UF_DATE_START\": \"2026-06-18 0:00:00\",\r\n    \"UF_DATE_END\": \"2026-06-25 0:00:00\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{url}}/cars/test-drive",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "cars",
+            "test-drive"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "url",
+      "value": ""
+    }
+  ]
+}

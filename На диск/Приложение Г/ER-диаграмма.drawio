@@ -1,0 +1,213 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram name="Страница-1" id="ECGr2813b0Q-GMA9fvHe">
+    <mxGraphModel dx="1567" dy="985" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-1" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" value="Statuses" vertex="1">
+          <mxGeometry height="120" width="450" x="70" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-2" parent="Q56STWK-Mb45JD-QWSoE-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="450" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-3" parent="Q56STWK-Mb45JD-QWSoE-2" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;fontStyle=1;" value="PK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-4" parent="Q56STWK-Mb45JD-QWSoE-2" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;fontStyle=5;" value="ID INT " vertex="1">
+          <mxGeometry height="30" width="420" x="30" as="geometry">
+            <mxRectangle height="30" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-5" parent="Q56STWK-Mb45JD-QWSoE-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="450" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-6" parent="Q56STWK-Mb45JD-QWSoE-5" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-7" parent="Q56STWK-Mb45JD-QWSoE-5" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" value="UF_NAME VARCHAR(100) NOT NULL COMMENT &#39;Наименование статуса&#39;" vertex="1">
+          <mxGeometry height="30" width="420" x="30" as="geometry">
+            <mxRectangle height="30" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-8" parent="Q56STWK-Mb45JD-QWSoE-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="450" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-9" parent="Q56STWK-Mb45JD-QWSoE-8" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-10" parent="Q56STWK-Mb45JD-QWSoE-8" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" value="UF_CODE VARCHAR(50) NOT NULL UNIQUE COMMENT &#39;Код статуса&#39;" vertex="1">
+          <mxGeometry height="30" width="420" x="30" as="geometry">
+            <mxRectangle height="30" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-11" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" value="Cars" vertex="1">
+          <mxGeometry height="210" width="450" x="560" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-12" parent="Q56STWK-Mb45JD-QWSoE-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="450" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-13" parent="Q56STWK-Mb45JD-QWSoE-12" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;fontStyle=1;" value="PK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-14" parent="Q56STWK-Mb45JD-QWSoE-12" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;fontStyle=5;" value="ID INT " vertex="1">
+          <mxGeometry height="30" width="420" x="30" as="geometry">
+            <mxRectangle height="30" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-15" parent="Q56STWK-Mb45JD-QWSoE-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="450" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-16" parent="Q56STWK-Mb45JD-QWSoE-15" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-17" parent="Q56STWK-Mb45JD-QWSoE-15" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" value="UF_MODEL VARCHAR(255) NOT NULL COMMENT &#39;Модель автомобиля&#39;" vertex="1">
+          <mxGeometry height="30" width="420" x="30" as="geometry">
+            <mxRectangle height="30" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-18" parent="Q56STWK-Mb45JD-QWSoE-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="450" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-19" parent="Q56STWK-Mb45JD-QWSoE-18" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-20" parent="Q56STWK-Mb45JD-QWSoE-18" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" value="UF_YEAR INT COMMENT &#39;Год выпуска&#39;" vertex="1">
+          <mxGeometry height="30" width="420" x="30" as="geometry">
+            <mxRectangle height="30" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-21" parent="Q56STWK-Mb45JD-QWSoE-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="450" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-22" parent="Q56STWK-Mb45JD-QWSoE-21" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-23" parent="Q56STWK-Mb45JD-QWSoE-21" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" value="UF_VIN VARCHAR(50) NOT NULL UNIQUE COMMENT &#39;VIN-код&#39;" vertex="1">
+          <mxGeometry height="30" width="420" x="30" as="geometry">
+            <mxRectangle height="30" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-24" parent="Q56STWK-Mb45JD-QWSoE-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="450" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-25" parent="Q56STWK-Mb45JD-QWSoE-24" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;" value="FK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-26" parent="Q56STWK-Mb45JD-QWSoE-24" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" value="UF_STATUS INT NOT NULL COMMENT &#39;Статус автомобиля&#39;" vertex="1">
+          <mxGeometry height="30" width="420" x="30" as="geometry">
+            <mxRectangle height="30" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-27" parent="Q56STWK-Mb45JD-QWSoE-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="450" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-28" parent="Q56STWK-Mb45JD-QWSoE-27" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-29" parent="Q56STWK-Mb45JD-QWSoE-27" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" value="UF_PRICE_PER_DAY INT COMMENT &#39;Стоимость тест-драйва за день&#39;" vertex="1">
+          <mxGeometry height="30" width="420" x="30" as="geometry">
+            <mxRectangle height="30" width="420" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-42" parent="1" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" value="TestDrives" vertex="1">
+          <mxGeometry height="180" width="410" x="1080" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-43" parent="Q56STWK-Mb45JD-QWSoE-42" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=1;" value="" vertex="1">
+          <mxGeometry height="30" width="410" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-44" parent="Q56STWK-Mb45JD-QWSoE-43" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;fontStyle=1;" value="PK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-45" parent="Q56STWK-Mb45JD-QWSoE-43" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;fontStyle=5;" value="ID INT " vertex="1">
+          <mxGeometry height="30" width="380" x="30" as="geometry">
+            <mxRectangle height="30" width="380" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-46" parent="Q56STWK-Mb45JD-QWSoE-42" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="410" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-47" parent="Q56STWK-Mb45JD-QWSoE-46" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;" value="FK" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-48" parent="Q56STWK-Mb45JD-QWSoE-46" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" value="UF_CAR INT NOT NULL COMMENT &#39;Автомобиль&#39;" vertex="1">
+          <mxGeometry height="30" width="380" x="30" as="geometry">
+            <mxRectangle height="30" width="380" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-49" parent="Q56STWK-Mb45JD-QWSoE-42" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="410" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-50" parent="Q56STWK-Mb45JD-QWSoE-49" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-51" parent="Q56STWK-Mb45JD-QWSoE-49" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" value="UF_DATE_START DATETIME NOT NULL COMMENT &#39;Дата начала&#39;" vertex="1">
+          <mxGeometry height="30" width="380" x="30" as="geometry">
+            <mxRectangle height="30" width="380" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-52" parent="Q56STWK-Mb45JD-QWSoE-42" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="410" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-53" parent="Q56STWK-Mb45JD-QWSoE-52" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-54" parent="Q56STWK-Mb45JD-QWSoE-52" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" value="UF_DATE_END DATETIME NOT NULL COMMENT &#39;Дата окончания&#39;" vertex="1">
+          <mxGeometry height="30" width="380" x="30" as="geometry">
+            <mxRectangle height="30" width="380" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-55" parent="Q56STWK-Mb45JD-QWSoE-42" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;top=0;left=0;right=0;bottom=0;" value="" vertex="1">
+          <mxGeometry height="30" width="410" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-56" parent="Q56STWK-Mb45JD-QWSoE-55" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;strokeColor=inherit;top=0;left=0;bottom=0;right=0;" value="" vertex="1">
+          <mxGeometry height="30" width="30" as="geometry">
+            <mxRectangle height="30" width="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-57" parent="Q56STWK-Mb45JD-QWSoE-55" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;align=left;strokeColor=inherit;top=0;left=0;bottom=0;right=0;spacingLeft=6;" value="UF_TOTAL_COST INT COMMENT &#39;Общая стоимость&#39;" vertex="1">
+          <mxGeometry height="30" width="380" x="30" as="geometry">
+            <mxRectangle height="30" width="380" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-70" edge="1" parent="1" source="Q56STWK-Mb45JD-QWSoE-2" style="endArrow=ERoneToMany;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERmandOne;startFill=0;endFill=0;edgeStyle=orthogonalEdgeStyle;" target="Q56STWK-Mb45JD-QWSoE-24" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="550" y="690" as="sourcePoint" />
+            <mxPoint x="600" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q56STWK-Mb45JD-QWSoE-71" edge="1" parent="1" source="Q56STWK-Mb45JD-QWSoE-12" style="endArrow=ERoneToMany;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERmandOne;startFill=0;endFill=0;edgeStyle=orthogonalEdgeStyle;" target="Q56STWK-Mb45JD-QWSoE-46" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="790" y="410" as="sourcePoint" />
+            <mxPoint x="860" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
